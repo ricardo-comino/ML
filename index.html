@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teste Ricardo Comino França | Mercado Livre</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <main class="main ch-box-lite" role="main" >            
+            <section class="section-product" itemscope itemtype="http://schema.org/Product">
+                <header>
+                    <h1 itemprop="name">Ipad Mini Apple 16 Gb Wifi Led 7.9</h1>
+                </header>
+                <img class="img-product" itemprop="image" src="img/Ipad_Mini_Apple.jpg" alt='Ipad Mini Apple 16 Gb Wifi Led 7.9' />
+                <form class="product-info" action="" method="get">
+                    <fieldset>
+                        <article class="ch-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <strong itemprop="priceCurrency">$</strong>
+                            <strong itemprop="price">4799<sup>99</sup></strong>                      
+                        </article>
+                    </fieldset>  
+                    <fieldset>
+                        <div class="ch-form-row" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                            <label for="number" class="label-product">
+                                Quantity:
+                            </label>
+                            <input itemprop="numberOfItems" class="input-number" name="number" min="1" max="99" placeholder="1" type="number">
+                        </div>
+                        <div class="ch-form-row">
+                            <label for="number" class="label-product">
+                                Payments:
+                            </label>
+                            <input class="input-number" name="number" min="1" max="12" placeholder="12" type="number">
+                        </div>
+                    </fieldset> 
+                    <button class="ch-btn ch-btn-large button" type="button" role="button"> Buy </button>                    
+                    <span class="ch-form-hint mensage">MercadoLibre isn't the owner of this product</span>
+                </form>
+
+                <div class="carousel" role="complementary" itemscope itemtype="http://schema.org/Product">
+                    <h2 class="others-products">More products like this</h2>
+                    <div class="ch-carousel-prev ch-user-no-select seta_carousel left" role="button" aria-hidden="false"></div>
+                    <div class="myCarousel ch-carousel" itemprop="isSimilarTo">
+                        <ul role="list">
+                            <li role="listitem"><a href="" title="descrição do produto" itemprop="url" ><img src="img/prod-1.jpg"></a></li>
+                            <li role="listitem"><a href="" title="descrição do produto" itemprop="url" ><img src="img/prod-2.jpg"></a></li>
+                            <li role="listitem"><a href="" title="descrição do produto" itemprop="url" ><img src="img/prod-3.jpg"></a></li>
+                            <li role="listitem"><a href="" title="descrição do produto" itemprop="url" ><img src="img/prod-4.jpg"></a></li>
+                            <li role="listitem"><a href="" title="descrição do produto" itemprop="url" ><img src="img/prod-5.jpg"></a></li>                            
+                        </ul>
+                    </div>
+                    <div class="ch-carousel-next ch-user-no-select seta_carousel" role="button" aria-hidden="false"></div>
+                </div>
+            </section>
+
+            <section class="section-tabs">
+                <div class="tabs-container">
+                    <input type="radio" name="tabs" class="tabs" id="tab1" checked >
+                    <label class="first-child" for="tab1" role="tab" aria-selected="true">Product description</label>
+                    <div role="tabpanel" aria-labelledby="tab1" itemprop="additionalProperty" itemscope itemtype="http://schema.org/Product">
+                        <p>In hac habitasse platea dictumst. In laoreet justo quis magna porta, a tristique ligula maximus. Sed dignissim, tellus eu lobortis aliquet, lacus felis semper ipsum, eu vulputate sapien velit in augue. Fusce pharetra elit ut tristique congue. Praesent arcu diam, convallis a purus vitae, tempor volutpat est. Sed quis nulla odio. Cras turpis lectus, convallis non nibh at, venenatis efficitur risus. Praesent sed pharetra quam. Morbi sagittis ex eget dolor faucibus, vel vulputate velit molestie. Etiam laoreet malesuada consectetur. Ut quis iaculis diam, ullamcorper malesuada metus. </p>
+                    </div>
+
+                    <input type="radio" name="tabs" class="tabs" id="tab2">
+                    <label for="tab2" role="tab">Questions</label>
+                    <div role="tabpanel" aria-labelledby="tab2" itemprop="review" itemscope itemtype="http://schema.org/Product">
+                        <h2 class="title-description blue">Buyer</h2>
+                        <div class="ch-box-info">
+                            <p>Do you have this one in white?</p>
+                        </div>
+                        <h2 class="title-description green">Seller</h2>
+                        <div class="ch-box-ok">
+                            <p>No I don't, I only have black</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+        </main>
+        <script src="js/scripts.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+/* 
+    Created on : 08/12/2016, 13:36:05
+    Author     : Ricardo Comino Franca
+*/
+@import "chico.min.css";
+
+.main {
+    position:relative;
+    max-width:600px;
+    margin:40px;
+}
+
+/* SECTION - PRODUCTS */
+.main .section-product {
+    position:relative;
+    padding:15px;
+    overflow:hidden;
+}
+.main .section-product .img-product {
+    position:relative;
+    float:left;
+    width:255px;
+    height:270px;
+    border: 1px solid #ddd;
+    margin: 10px 0 0;
+}
+.main .section-product .product-info {
+    position:relative;
+    float:left;
+    width:270px;
+    margin:10px 0 20px 40px;
+}
+.main .section-product .product-info .label-product {
+    width:60px;
+    float:left;
+    text-align:left;
+}
+.main .section-product .product-info .input-number {
+    width:35px;
+}
+.ch-form-row {
+    padding: 0 !important;
+}
+.main .section-product .product-info .button {
+    margin:10px 0 0;
+    width:80px;
+}
+.main .section-product .product-info .mensage {
+    margin:5px 0 0;
+    float:left;
+}
+
+
+/* CAROUSEL */
+.main .section-product .carousel {
+    position:relative;
+    float:left;
+    width:270px;
+    margin:5px 0 0 20px;    
+}
+.main .section-product .carousel .myCarousel {
+    left:47px;
+    width:165px;
+    overflow:hidden;
+}
+.main .section-product .carousel .others-products {
+    font-size:16px;
+    font-weight:bold;
+    margin:0 0 10px 20px;
+}
+
+
+/* SECTION - TABS */
+.main .section-tabs {
+    position:relative;   
+    min-height: 210px;
+}
+.main .section-tabs .tabs-container {
+    position: relative;
+    max-width: 98%;
+    margin: 0 auto;
+}
+.main .section-tabs .tabs-container:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    visibility: none;
+}
+.main .section-tabs input.tabs {
+    display: none;
+}
+.main .section-tabs input.tabs + label {
+    line-height: 25px;
+    border: 1px solid #dedede;
+    border-radius: 5px 5px 0 0;
+    color: #333 !important;
+    margin: 0 0 0 5px;
+    padding: 3px 12px;
+    float: left;
+    background: #EEEEEE;
+    cursor: pointer;
+    -webkit-transition:background ease-in-out .3s;
+    transition: background ease-in-out .3s;
+}
+.main .section-tabs input.tabs + label.first-child {
+    margin:0 0 0 10px;  
+}
+.main .section-tabs input.tabs:checked + label {
+    color: #000;
+    background: #FFF;
+}
+.main .section-tabs input.tabs + label + div {
+    width: 96%;
+    opacity: 0;
+    position: absolute;
+    background: #EEEEEE;
+    border: 1px solid #dedede; 
+    top: 32px;
+    left: 0;
+    padding: 10px;
+    z-index: -1;
+    -webkit-transition:opacity ease-in-out .3s;
+    transition: opacity ease-in-out .3s;
+}
+.main .section-tabs input.tabs:checked + label + div {
+    opacity: 1;
+    z-index: 1000;
+    background: #FFF;
+}
+.main .section-tabs input.tabs + label + div .title-description {
+    font-size:14px;
+    margin:0;
+}
+.main .section-tabs input.tabs + label + div .title-description.blue {color:#3a87ad;}
+.main .section-tabs input.tabs + label + div .title-description.green {color:#468847;}
